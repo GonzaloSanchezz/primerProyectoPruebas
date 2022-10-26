@@ -132,7 +132,7 @@ footer{
 
     /* desktop */
 
-@media (min-width: 1024px){
+@media (min-width: 992px){
     header{
         display: flex;
         flex direction: display;
@@ -192,7 +192,7 @@ footer{
     
     /* medium size */
 
-@media screen and (max-width: 1024px) and (min-width: 600px){
+@media screen and (max-width: 992px) and (min-width: 576px){
     header{
         display: flex;
         flex-direction: column;
@@ -256,7 +256,7 @@ footer{
 
     /* phone */
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 576px){
 
     header{
         display: flex;
@@ -307,7 +307,7 @@ footer{
         padding-bottom: 10px;
     }
     .footer__ul li{
-        font-size: 18px;
+        font-size: 10px;
         padding-left: 20px;
     }
     #fotoMia{
