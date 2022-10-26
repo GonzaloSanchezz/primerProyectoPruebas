@@ -193,6 +193,7 @@ footer{
     /* medium size */
 
 @media screen and (max-width: 992px) and (min-width: 576px){
+
     header{
         display: flex;
         flex-direction: column;
@@ -294,7 +295,8 @@ footer{
     .section{
         border: solid 3px rgb(195, 111, 9);
         margin: 30px;
-        padding: 20px;}
+        padding: 20px;
+    }
     .titulo{
         font-size: 15px;
     }
