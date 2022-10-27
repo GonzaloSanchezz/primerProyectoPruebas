@@ -127,6 +127,13 @@ footer{
 .section img{
     mix-blend-mode: normal;
 }
+.section_grid{
+    border: 5px solid rgb(195, 111, 9);
+    padding: 10px;
+}
+.borde_imagen_carrusel{
+    border: 10px solid rgb(195, 111, 9);
+}    
 
 /* media queries */
 
@@ -166,6 +173,7 @@ footer{
         border: solid 5px rgb(195, 111, 9);
         font-size: 20px;
         margin: 50px;
+        margin-top: 20rem;
         padding: 20px;}
     .titulo{
         font-size: 30px;
@@ -187,6 +195,11 @@ footer{
     }
     #ruta{
         width: 900px;
+    }
+    .imagen_carrusel{
+        padding-top: 100px;
+        width: 500px;   
+        justify-content: center;
     }
 }
     
@@ -230,7 +243,9 @@ footer{
     .section{
         border: solid 4px rgb(195, 111, 9);
         margin: 50px;
-        padding: 20px;}
+        margin-top: 20rem;
+        padding: 20px;
+    }
     .titulo{
         font-size: 25px;
     }
@@ -252,7 +267,11 @@ footer{
     #ruta{
         width: 480px;
     }
-
+    .imagen_carrusel{
+        padding-top: 80px;
+        width: 400px;   
+        justify-content: center;
+    }
 }
 
     /* phone */
@@ -264,11 +283,11 @@ footer{
         flex-direction: column;
     }
     .header_nav_lista{
-        padding: 10px;
+        padding: 5px;
         flex-direction: column;
     }
     .header_nav_lista li{
-        padding: 10px;
+        padding: 5px;
     }
     .body{
         display: flex;
@@ -287,10 +306,11 @@ footer{
         font-size: 15px;
     }
     .main__parrafo{
-        font-size: 12px;
+        font-size: 15px;
     }
     .section__parrafo{
-        font-size: 10px;
+        font-size: 15px;
+        padding-bottom: 30px;
     }
     .section{
         border: solid 3px rgb(195, 111, 9);
@@ -298,7 +318,7 @@ footer{
         padding: 20px;
     }
     .titulo{
-        font-size: 15px;
+        font-size: 20px;
     }
     .subtitulo{
         font-size: 13px;
@@ -322,6 +342,15 @@ footer{
     iframe{
         width: 400px;
     }
+    .grid{
+        display: flex;
+        flex-direction: column;
+    }
+    .imagen_carrusel{
+        padding-top: 50px;
+        width: 300px;   
+        justify-content: center;
+    }
 
 }
 
@@ -343,6 +372,32 @@ header{
         opacity: 1;
     }
 }
+
+/* animacion hola mundo */
+.holamundoDiv{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.holaMundo {
+    display: block;
+    font-family: monospace;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 12ch;
+    font-size: 25px;
+    animation: typing 2s steps(12), blink .5s infinite step-end alternate;
+    overflow:hidden;
+    }
+    
+    @keyFrames typing {
+    
+    from { width: 0}
+    }
+    
+    @keyFrames blink {
+     50% { border-color: transparent}
+    }
 
 
 
