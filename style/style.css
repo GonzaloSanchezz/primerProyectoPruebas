@@ -16,7 +16,7 @@ html {
 
 a{
     text-decoration: none;
-    color: black;
+    color: white;
 }
 li{
     list-style: none;
@@ -25,6 +25,14 @@ li{
 /* header */
 
 header{
+    justify-content: space-between;
+    min-height: 50px;
+    width: 100%;
+    font-family: sans-serif;
+    align-items: center;
+    z-index: 2;
+}
+.header_alterno{
     background-color: rgb(195, 111, 9);
     border: black 1px solid;
     justify-content: space-between;
@@ -34,6 +42,10 @@ header{
     align-items: center;
     position: fixed;
     z-index: 2;
+}
+.header_main{
+    background-image: url(../Imagenes/workspace-g510092e90_1920.jpg);
+    border-bottom: solid 5px rgb(195, 111, 9);
 }
 .header_logo_img{
     padding-right: 10px;
@@ -45,12 +57,16 @@ header{
     display: flex;
     align-items: center;
 }
+.linkHeader{
+    color: aliceblue;
+}
 .header_nav_lista{
     display: flex;
     justify-content: right;
 }
+
 .header_nav_lista li a{
-    color: black;
+    color: white;
     text-decoration: none;
     font-family: rubik, sans-serif,
 }
@@ -97,6 +113,7 @@ footer{
     border-radius: 5px;
 }
 
+
 /* grid de la pagina "tu entorno" */
 
 .grid{
@@ -116,7 +133,7 @@ footer{
 .header_nav_lista li a:hover{
     color: white;
 }
-.link:hover{
+a:hover{
     color: rgb(195, 111, 9);
     transition: all 0.5s;
 }
@@ -153,8 +170,8 @@ footer{
         padding-right: 35px; 
     }
     main{
-        padding-top: 70px;
-        padding-bottom: 30px;
+        padding-top: 200px;
+        padding-bottom: 200px;
     }
     .header_nav_lista li a{
         font-size: 20px;
@@ -200,6 +217,9 @@ footer{
         padding-top: 100px;
         width: 500px;   
         justify-content: center;
+    }
+    section iframe{
+        width: 50%;
     }
 }
     
@@ -265,13 +285,17 @@ footer{
         border: 5px black solid;
     }
     #ruta{
-        width: 480px;
+        width: 100%;
     }
     .imagen_carrusel{
         padding-top: 80px;
         width: 400px;   
         justify-content: center;
     }
+    section iframe{
+        width: 60%;
+    }
+    
 }
 
     /* phone */
@@ -337,7 +361,7 @@ footer{
         border: 5px black solid;
     }
     #ruta{
-        width: 400px;
+        visibility: hidden;
     }
     iframe{
         width: 400px;
@@ -350,6 +374,12 @@ footer{
         padding-top: 50px;
         width: 300px;   
         justify-content: center;
+    }
+    main{
+        padding-top: 50px;
+    }
+    section iframe{
+        width: 100%;
     }
 
 }
