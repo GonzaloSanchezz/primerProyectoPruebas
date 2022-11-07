@@ -82,6 +82,7 @@ header{
     flex-direction: column;
     align-content: center;
     text-align: center;
+    overflow: hidden;
 }
 
 .section{
@@ -353,7 +354,7 @@ a:hover{
         padding-bottom: 10px;
     }
     .footer__ul li{
-        font-size: 10px;
+        font-size: 8px;
         padding-left: 20px;
     }
     #fotoMia{
