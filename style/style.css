@@ -231,7 +231,7 @@ a:hover {
     align-content: center;
   }
   main {
-    padding-top: 120px;
+    padding-top: 200px;
     padding-bottom: 30px;
   }
   .header_nav_lista li a {
@@ -291,6 +291,9 @@ a:hover {
   header {
     display: flex;
     flex-direction: column;
+  }
+  .main_alterno {
+    padding-top: 300px;
   }
   .header_nav_lista {
     padding: 5px;
