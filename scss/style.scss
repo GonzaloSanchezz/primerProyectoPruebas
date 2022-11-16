@@ -13,10 +13,9 @@
     text-align: center;
     overflow: hidden;
 }
-
 .section{
     background-color: $negro;
-    border-radius: 2rem;
+    color: white;
 }
 .section img{
     filter: brightness(1.1);
@@ -31,9 +30,11 @@
     font-weight: bold;
 }
 #fotoMia{
-    border-radius: 5px;
+    border-radius: 1px;
 }
-
+#pandagif{
+    width: 60%;
+}
 
 /* grid de la pagina "tu entorno" */
 
@@ -55,7 +56,7 @@
     color: white;
 }
 a:hover{
-    color: $naranja;
+    color: rgb(46, 229, 156);
     transition: all 0.5s;
 }
 #fotoMia:hover{
@@ -81,6 +82,9 @@ a:hover{
     header{
         display: flex;
     }
+    .header_main{
+        height: 1000px;
+    }
     .body{
         display: flex;
         flex-direction: column;
@@ -91,7 +95,7 @@ a:hover{
     }
     main{
         padding-top: 200px;
-        padding-bottom: 200px;
+        padding-bottom: 400px;
     }
     .header_nav_lista li a{
         font-size: 20px;
@@ -102,16 +106,18 @@ a:hover{
     }
     .main__parrafo{
         font-size: 20px;
+        padding-left: 110px;
+        padding-right: 110px;
     }
     .section__parrafo{
         font-size: 17px;
     }
     .section{
-        border: solid 5px $naranja;
         font-size: 20px;
         margin: 50px;
-        margin-top: 20rem;
-        padding: 20px;}
+        margin-top: 1rem;
+        padding: 20px;
+    }
     .titulo{
         font-size: 30px;
     }
@@ -128,7 +134,6 @@ a:hover{
     }
     #fotoMia{
         height: 350px;
-        border: 5px black solid;
     }
     #ruta{
         width: 900px;
@@ -142,7 +147,18 @@ a:hover{
         width: 50%;
     }
 }
+   
+    // media para los botones del header //
+
+@media screen and (max-width: 1150px){
+    header{
+        display:flex;
+        flex-direction: column;
+        padding-top: 10px;
+    }
+}
     
+
     /* medium size */
 
 @media screen and (max-width: 992px) and (min-width: 576px){
@@ -150,13 +166,16 @@ a:hover{
     header{
         display: flex;
         flex-direction: column;
-        position: absolute;
+    }
+    .header_main{
+        height: 1000px;
     }
     .header_nav_lista{
         padding: 5px;
+        flex-direction: column;
     }
     .header_nav_lista li{
-        padding: 10px;
+        padding: 12px;
     }
     .body{
         display: flex;
@@ -164,7 +183,7 @@ a:hover{
         align-content: center;
     }
     main{
-        padding-top: 200px;
+        padding-top: 100px;
         padding-bottom: 30px;
     }
     .header_nav_lista li a{
@@ -184,7 +203,6 @@ a:hover{
         height: 150px;
     }
     .section{
-        border: solid 4px $naranja;
         margin: 50px;
         margin-top: 20rem;
         padding: 20px;
@@ -205,7 +223,7 @@ a:hover{
     }
     #fotoMia{
         height: 300px;
-        border: 5px black solid;
+        border: solid black 3px;
     }
     #ruta{
         width: 100%;
@@ -228,6 +246,9 @@ a:hover{
     header{
         display: flex;
         flex-direction: column;
+    }
+    .header_main{
+        height: 1000px;
     }
     .main_alterno{
         padding-top: 300px;
@@ -266,7 +287,6 @@ a:hover{
         padding-bottom: 30px;
     }
     .section{
-        border: solid 3px $naranja;
         margin: 30px;
         padding: 20px;
     }
@@ -336,7 +356,7 @@ header{
 .holamundoDiv{
     display: flex;
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 .holaMundo {
     display: block;

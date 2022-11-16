@@ -7,24 +7,12 @@ header {
   width: 100%;
   font-family: sans-serif;
   align-items: center;
-  z-index: 2;
-}
-
-.header_alterno {
-  background-color: rgb(195, 111, 9);
-  border: black 1px solid;
-  justify-content: space-between;
-  min-height: 70px;
-  width: 100%;
-  font-family: sans-serif;
-  align-items: center;
-  position: fixed;
-  z-index: 2;
+  z-index: 1;
 }
 
 .header_main {
   background-image: url(../Imagenes/workspace-g510092e90_1920.jpg);
-  border-bottom: solid 5px rgb(195, 111, 9);
+  position: relative;
 }
 
 .header_logo_img {
@@ -39,6 +27,7 @@ header {
 }
 
 .header_nav_lista {
+  padding-top: 15px;
   display: flex;
   justify-content: right;
   list-style: none;
@@ -53,6 +42,36 @@ header {
 .header_logo a {
   text-decoration: none;
   color: white;
+  font-family: monserrat, sans-serif;
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.button-nav {
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.button-nav:hover {
+  background-color: #23c483;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.button-nav:active {
+  transform: translateY(-1px);
 }
 
 footer {
@@ -80,7 +99,7 @@ footer {
 
 .section {
   background-color: rgb(36, 39, 43);
-  border-radius: 2rem;
+  color: white;
 }
 
 .section img {
@@ -99,7 +118,11 @@ footer {
 }
 
 #fotoMia {
-  border-radius: 5px;
+  border-radius: 1px;
+}
+
+#pandagif {
+  width: 60%;
 }
 
 /* grid de la pagina "tu entorno" */
@@ -122,7 +145,7 @@ footer {
 }
 
 a:hover {
-  color: rgb(195, 111, 9);
+  color: rgb(46, 229, 156);
   transition: all 0.5s;
 }
 
@@ -150,6 +173,9 @@ a:hover {
   header {
     display: flex;
   }
+  .header_main {
+    height: 1000px;
+  }
   .body {
     display: flex;
     flex-direction: column;
@@ -160,7 +186,7 @@ a:hover {
   }
   main {
     padding-top: 200px;
-    padding-bottom: 200px;
+    padding-bottom: 400px;
   }
   .header_nav_lista li a {
     font-size: 20px;
@@ -171,15 +197,16 @@ a:hover {
   }
   .main__parrafo {
     font-size: 20px;
+    padding-left: 110px;
+    padding-right: 110px;
   }
   .section__parrafo {
     font-size: 17px;
   }
   .section {
-    border: solid 5px rgb(195, 111, 9);
     font-size: 20px;
     margin: 50px;
-    margin-top: 20rem;
+    margin-top: 1rem;
     padding: 20px;
   }
   .titulo {
@@ -198,7 +225,6 @@ a:hover {
   }
   #fotoMia {
     height: 350px;
-    border: 5px black solid;
   }
   #ruta {
     width: 900px;
@@ -212,18 +238,28 @@ a:hover {
     width: 50%;
   }
 }
+@media screen and (max-width: 1150px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+  }
+}
 /* medium size */
 @media screen and (max-width: 992px) and (min-width: 576px) {
   header {
     display: flex;
     flex-direction: column;
-    position: absolute;
+  }
+  .header_main {
+    height: 1000px;
   }
   .header_nav_lista {
     padding: 5px;
+    flex-direction: column;
   }
   .header_nav_lista li {
-    padding: 10px;
+    padding: 12px;
   }
   .body {
     display: flex;
@@ -231,7 +267,7 @@ a:hover {
     align-content: center;
   }
   main {
-    padding-top: 200px;
+    padding-top: 100px;
     padding-bottom: 30px;
   }
   .header_nav_lista li a {
@@ -251,7 +287,6 @@ a:hover {
     height: 150px;
   }
   .section {
-    border: solid 4px rgb(195, 111, 9);
     margin: 50px;
     margin-top: 20rem;
     padding: 20px;
@@ -272,7 +307,7 @@ a:hover {
   }
   #fotoMia {
     height: 300px;
-    border: 5px black solid;
+    border: solid black 3px;
   }
   #ruta {
     width: 100%;
@@ -291,6 +326,9 @@ a:hover {
   header {
     display: flex;
     flex-direction: column;
+  }
+  .header_main {
+    height: 1000px;
   }
   .main_alterno {
     padding-top: 300px;
@@ -329,7 +367,6 @@ a:hover {
     padding-bottom: 30px;
   }
   .section {
-    border: solid 3px rgb(195, 111, 9);
     margin: 30px;
     padding: 20px;
   }
@@ -394,7 +431,7 @@ header {
 .holamundoDiv {
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .holaMundo {
