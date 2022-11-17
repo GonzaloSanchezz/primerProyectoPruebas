@@ -13,15 +13,7 @@ header{
     background-image: url(../Imagenes/workspace-g510092e90_1920.jpg);
     position: relative;
 }
-.header_main::before{
-    content: "";
-    height: 90%;
-    width: 100%;
-    position: absolute;
-    right: 0;
-    top: 100px;
-    background: linear-gradient(rgba(255,255,255,0), rgb(36, 39, 43, 1));
-}
+
 .header_logo_img{
     padding-right: 10px;
     padding-top: 3px;

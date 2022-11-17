@@ -15,16 +15,6 @@ header {
   position: relative;
 }
 
-.header_main::before {
-  content: "";
-  height: 90%;
-  width: 100%;
-  position: absolute;
-  right: 0;
-  top: 100px;
-  background: linear-gradient(rgba(255, 255, 255, 0), rgb(36, 39, 43));
-}
-
 .header_logo_img {
   padding-right: 10px;
   padding-top: 3px;
@@ -135,6 +125,13 @@ footer {
   width: 60%;
 }
 
+#scrolldown {
+  position: fixed;
+  height: 25%;
+  padding-left: 38%;
+  color: white;
+}
+
 /* grid de la pagina "tu entorno" */
 .grid {
   width: 100%;
@@ -185,6 +182,15 @@ a:hover {
   }
   .header_main {
     height: 1000px;
+  }
+  .header_main::before {
+    content: "";
+    height: 90%;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 100px;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgb(36, 39, 43));
   }
   .body {
     display: flex;
@@ -264,6 +270,15 @@ a:hover {
   .header_main {
     height: 1000px;
   }
+  .header_main::before {
+    content: "";
+    height: 90%;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 420px;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgb(36, 39, 43) 65%);
+  }
   .header_nav_lista {
     padding: 5px;
     flex-direction: column;
@@ -322,6 +337,9 @@ a:hover {
   #ruta {
     width: 100%;
   }
+  #scrolldown {
+    visibility: hidden;
+  }
   .imagen_carrusel {
     padding-top: 80px;
     width: 400px;
@@ -339,6 +357,15 @@ a:hover {
   }
   .header_main {
     height: 1000px;
+  }
+  .header_main::before {
+    content: "";
+    height: 90%;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 420px;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgb(36, 39, 43) 65%);
   }
   .main_alterno {
     padding-top: 300px;
