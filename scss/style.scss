@@ -24,6 +24,9 @@
 .section_ruta img{
     height: 100%;
 }
+ul{
+    list-style: none;
+}
 .link{
     text-decoration: none;
     color: aliceblue;
@@ -191,7 +194,6 @@
 
 }
 
-.info_title,
 .info_items{
     position: relative;
     z-index: 2;
@@ -257,7 +259,6 @@ form.form_contact label{
     font-weight: 600;
 }
 
-form.form_contact input,
 form.form_contact textarea{
     width: 100%;
     padding: 8px 0px 5px;
@@ -483,7 +484,23 @@ a:hover{
         padding-top: 10px;
     }
 }
-    
+
+    // media para la animacion de scroll //
+@media screen and (max-width: 1850px){
+    #scrolldown{
+        visibility: hidden;
+    }
+}
+
+
+    // media para el grid tu entorno //
+
+@media screen and (max-width: 1350px){
+    .grid{
+        display: flex;
+        flex-direction: column;
+    }
+}
 
     /* medium size */
 
@@ -567,6 +584,9 @@ a:hover{
     }
     .cantact_info{
         width: 100%;
+    }
+    .card{
+        padding-top: 20px;
     }
     form.form_contact{
         width: 100%;
@@ -687,10 +707,6 @@ a:hover{
     }
     iframe{
         width: 400px;
-    }
-    .grid{
-        display: flex;
-        flex-direction: column;
     }
     .card{
         width: 300px;
